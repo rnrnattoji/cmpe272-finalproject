@@ -8,25 +8,50 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .company-container{
+            width: 100%;
+            height:100%;
+            margin: 0 auto;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+
+        }
+        iframe{
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
 </head>
 
-<body background="online_shopping.jpeg" background-repeat="no-repeat" background-size="cover">
+<body background="online_shopping.jpeg" background-repeat="no-repeat" background-size="cover" background-opacity="0.2">
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <!-- <div class="navbar-header">
                 <a class="navbar-brand">Cross Domain Enterprise Online Market Place</a>
             </div> -->
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="register.php"><span class="glyphicon glyphicon-user"></span> New User?</a></li>
-                <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Existing User?</a></li>
-            </ul>
+            <?php require_once "navbar.php"?>
         </div>
     </nav>
 
-    <div class="bg container" style="margin-top:60px">
+    <div class="bg" style="margin-top:60px">
         <h1 style="text-align:center;color:white;">Welcome to Cross Domain Enterprise Online Market Place.</h1>
+        <?php 
+            if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+               echo "
+                    <div class='company-container'>
+                    <iframe src='https://sayali-cmpe272.bayaskarpowerpack.co.in'></iframe>
+                    <iframe src='https://cmpe272.rnrnattoji.click/project/welcome.php'></iframe>
+                    <iframe src='https://cmpe272hw.pietrasik.top'></iframe>
+                    <iframe src='https://subramanyajagadeesh-0a2895b9a580.herokuapp.com'></iframe>
+                    </div>
+                ";
+            }
+        ?>
     </div>
+    
 </body>
 
 </html>
