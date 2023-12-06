@@ -107,19 +107,19 @@
                 }
                 echo '<p  class="inpageheading"> Previously visited pages</p>';
                 echo count($lastvisited);
+                echo '<div class = "carddiv">';
+                echo '<div class = "card-container">';
 
                 foreach ($lastvisited as  $name => $market) {
-                    echo '<div class = "carddiv">';
-                    echo '<div class = "card-container">';
 
                     echo '<a href = "'.$enumeration[$name].'"><div class="card">';
                     echo '<h3>'.$name.'</h3>';
                     echo '</div></a>';
 
-                    echo '</div>';
-                    echo '</div>';
-
                 }
+
+                echo '</div>';
+                echo '</div>';
             }
             ?>    
 
