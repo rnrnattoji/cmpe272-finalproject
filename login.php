@@ -168,7 +168,7 @@
                 <a href="index.php" class="navbar-brand">Online Market Place</a>
             </div>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="register.php"><span class="glyphicon glyphicon-user"></span> New User?</a></li>                
+                <li><a href="createuser.php"><span class="glyphicon glyphicon-user"></span> New User?</a></li>                
             </ul>
         </div>
     </nav>
