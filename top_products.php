@@ -13,9 +13,9 @@
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
-            <!-- <div class="navbar-header">
-                <a class="navbar-brand">Cross Domain Enterprise Online Market Place</a>
-            </div> -->
+            <div class="navbar-header">
+                <a href="index.php" class="navbar-brand">Online Market Place</a>
+            </div>
             <?php require_once "navbar.php"?>
         </div>
     </nav>
