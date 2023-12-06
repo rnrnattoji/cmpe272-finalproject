@@ -130,7 +130,7 @@
                                     $_SESSION["loggedin"] = true;
                                     $_SESSION["id"] = $id;
                                     $_SESSION["username"] = $username;
-
+                                    $_POST["success"] = "Successfully logged in, please refresh!";
                                     // Redirect user to welcome page
                                     // Subramanya Logic needed
                                     echo "
@@ -165,7 +165,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand">Online Market Place</a>
+                <a href="index.php" class="navbar-brand">Online Market Place</a>
             </div>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="register.php"><span class="glyphicon glyphicon-user"></span> New User?</a></li>                
@@ -196,6 +196,13 @@
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
+            <?php 
+                if(isset($_POST['success']))
+                {
+                    $success = $_POST['success'];
+                    echo "<span style='color: green'>$success</span>";
+                }
+            ?>
             <p>Don't have an account? <a href="createuser.php">Sign up now</a>.</p>
         </form>
     </div>
