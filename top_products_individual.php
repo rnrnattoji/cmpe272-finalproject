@@ -21,12 +21,10 @@
     </nav>
 
     <div class="bg container" style="margin-top:60px">
-        <h1 style="text-align:center;color:white;">Welcome to Cross Domain Enterprise Online Market Place.</h1>
+        <h1 style="text-align:center;color:white;">Top products by individual company</h1>
       <?php
         require_once "./top_products/embed/by_company_rating.php";
         require_once "./top_products/embed/by_company_views.php";
-        require_once "./top_products/embed/combined_rating.php";
-        require_once "./top_products/embed/combined_views.php";
        ?>  
     </div>
     

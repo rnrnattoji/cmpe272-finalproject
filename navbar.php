@@ -22,5 +22,6 @@
           ";
       }
   ?>
-  <li><a href='top_products.php'><span class='glyphicon glyphicon-log-in'></span> Top Products</a></li>
+  <li><a href='top_products_marketplace.php'><span class='glyphicon glyphicon-log-in'></span> Top Products Marketplace</a></li>
+  <li><a href='top_products_individual.php'><span class='glyphicon glyphicon-log-in'></span> Top Products Individual</a></li>
 </ul>
